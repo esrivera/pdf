@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5F2CD720-0EE9-41ED-8E66-55DFC30999FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinAppParesCuerpo</RootNamespace>
+    <AssemblyName>WinAppParesCuerpo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CNivel.cs" />
+    <Compile Include="CNivel1.cs" />
+    <Compile Include="CNivel2.cs" />
+    <Compile Include="CNivel3.cs" />
+    <Compile Include="frmNivel1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNivel1.Designer.cs">
+      <DependentUpon>frmNivel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNivel2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNivel2.Designer.cs">
+      <DependentUpon>frmNivel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNivel3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNivel3.Designer.cs">
+      <DependentUpon>frmNivel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOk.Designer.cs">
+      <DependentUpon>frmOk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmNivel1.resx">
+      <DependentUpon>frmNivel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNivel2.resx">
+      <DependentUpon>frmNivel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNivel3.resx">
+      <DependentUpon>frmNivel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOk.resx">
+      <DependentUpon>frmOk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\niños.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TITULO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nivel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nivel2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nivel3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REPLAY-NIVEL-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REPLAY-NIVEL-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REPLAY-NIVEL-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UNO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TRES.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\anterior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interrogacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EMOGI-FELIZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\boca.wav" />
+    <Content Include="Resources\Brazo.wav" />
+    <None Include="Resources\corazon.png" />
+    <None Include="Resources\error.wav" />
+    <Content Include="Resources\Excelente.wav" />
+    <None Include="Resources\replay-3-errores.png" />
+    <None Include="Resources\Fallaste.wav" />
+    <Content Include="Resources\Fin del juego.wav" />
+    <None Include="Resources\InicioNivel1.wav" />
+    <None Include="Resources\InicioNivel2.wav" />
+    <None Include="Resources\InicioNivel3.wav" />
+    <Content Include="Resources\Mano.wav" />
+    <None Include="Resources\Menu principal.wav" />
+    <Content Include="Resources\Nariz.wav" />
+    <Content Include="Resources\Ojo.wav" />
+    <Content Include="Resources\Oreja.wav" />
+    <None Include="Resources\Para texto.wav" />
+    <Content Include="Resources\Pie.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
